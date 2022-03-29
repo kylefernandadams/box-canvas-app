@@ -3,23 +3,29 @@ The Box Canvas App project is an SalesforceDX project that contains Lightning Au
 
 ## Pre-Requisites
 
-1. Install and Configure the Box for Salesforce Managed Package: https://community.box.com/t5/How-to-Guides-for-Integrations/Installing-and-Configuring-Box-For-Salesforce/ta-p/180
+1. Install and configure the Box for Salesforce Managed Package: https://community.box.com/t5/How-to-Guides-for-Integrations/Installing-and-Configuring-Box-For-Salesforce/ta-p/180
     > Note: Dont forget to add the Box VisualForce components to each of the record type layouts.
 2. Setup your Salesforce DX environment: https://developer.salesforce.com/docs/component-library/documentation/lwc/lwc.install_setup_develop
 3. In VS Code, use the cmd+shift+p shortcut and select SFDX: Authorize Org.
-4. Deploy to Salesforce
+4. Click the Deploy to Salesforce button
+
 5. Copy the Consumer Secret for the Box CanvasApp
 - `Salesforce Setup > Apps > App Manager > Box CanvasApp > View`
 - `Consumer Secret > Click to reveal > Copy`
 6. Deploy the [box-ui-elements-heroku](https://github.com/kylefernandadams/box-ui-elements-heroku) app to Heroku
 7. . Clone this repository
-- `git clone https://github.com/kylefernandadams/box-salesforce-blueprints`
+```shell
+git clone https://github.com/kylefernandadams/box-salesforce-blueprints
+```
+
 8. Change directory to box-canvas-app
 9. Update the [canvasUrl](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L5) with the domain created from the Heroku deployment
-10. Update the [callbackUrl](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L13) with the domain created from the Heroku deployment
-11. Update the [contactEmail](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L10) with your own
-12. Deploy changes to Salesforce using the sfdx-cli:
-- `sfdx force:source:deploy -p force-app -u me@example.com`
+10.  Update the [callbackUrl](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L13) with the domain created from the Heroku deployment
+11.  Update the [contactEmail](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L10) with your own
+12.  Deploy changes to Salesforce using the sfdx-cli:
+```shell
+sfdx force:source:deploy -p force-app -u me@example.com
+```
   
 
 ## Disclaimer
