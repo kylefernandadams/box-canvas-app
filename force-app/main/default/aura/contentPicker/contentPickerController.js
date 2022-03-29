@@ -3,6 +3,10 @@
         var recordId = cmp.get("v.recordId");
         var folderId = cmp.get("v.folderId");
 
-        cmp.set("v.params", '{"recordId": "' + recordId + '", "folderId": "' + folderId + '", "elementType": "picker" }');
+        cmp.set("v.params", JSON.stringify({ 
+            recordId: recordId, 
+            folderId: folderId,
+            elementType: 'picker' 
+        }));
     }
 })

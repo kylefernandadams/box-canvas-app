@@ -3,6 +3,10 @@
         var recordId = cmp.get("v.recordId");
         var userId = cmp.get("v.userId");
 
-        cmp.set("v.params", '{"recordId": "' + recordId + '", "userId": "' + userId + '", "elementType": "recents" }');
+        cmp.set("v.params", JSON.stringify({ 
+            recordId: recordId, 
+            userId: userId,
+            elementType: 'recents' 
+        }));
     }
 })
