@@ -18,16 +18,16 @@ The Box Canvas App project is an SalesforceDX project that contains Lightning Au
 - `Consumer Secret > Click to reveal > Copy`
   
 6. Deploy the [box-ui-elements-heroku](https://github.com/kylefernandadams/box-ui-elements-heroku) app to Heroku
-7. . Clone this repository
+7. Clone this repository
 ```shell
 git clone https://github.com/kylefernandadams/box-salesforce-blueprints
 ```
 
 8. Change directory to box-canvas-app
 9. Update the [canvasUrl](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L5) with the domain created from the Heroku deployment
-10.  Update the [callbackUrl](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L13) with the domain created from the Heroku deployment
-11.  Update the [contactEmail](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L10) with your own
-12.  Deploy changes to Salesforce using the sfdx-cli:
+10. Update the [callbackUrl](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L13) with the domain created from the Heroku deployment
+11. Update the [contactEmail](https://github.com/kylefernandadams/box-canvas-app/blob/master/force-app/main/default/connectedApps/boxCanvasApp.connectedApp-meta.xml#L10) with your own
+12. Deploy changes to Salesforce using the sfdx-cli:
 ```shell
 sfdx force:source:deploy -p force-app -u me@example.com
 ```
