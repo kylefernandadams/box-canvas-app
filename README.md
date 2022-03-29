@@ -7,7 +7,7 @@ The Box Canvas App project is an SalesforceDX project that contains Lightning Au
     > Note: Dont forget to add the Box VisualForce components to each of the record type layouts.
 2. Setup your Salesforce DX environment: https://developer.salesforce.com/docs/component-library/documentation/lwc/lwc.install_setup_develop
 3. In VS Code, use the cmd+shift+p shortcut and select SFDX: Authorize Org.
-4. Click the Deploy to Salesforce button, login, and deploy
+4. Click the Deploy to Salesforce button below, login, and deploy
 <a href="https://githubsfdeploy.herokuapp.com?owner=kylefernandadams&repo=box-canvas-app&ref=main">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
