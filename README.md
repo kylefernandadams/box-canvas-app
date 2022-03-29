@@ -31,6 +31,7 @@ git clone https://github.com/kylefernandadams/box-salesforce-blueprints
 ```shell
 sfdx force:source:deploy -p force-app -u me@example.com
 ```
+13. Go to Lightning app builder page or Experience builder for any record type and drag and drop any of the UI Elements with Box logos.
   
 
 ## Disclaimer
