@@ -35,7 +35,7 @@ sfdx force:source:deploy -p force-app -u me@example.com
   
 
 ## Disclaimer
-This project is comprised of open source examples and should not be treated as an officially supported product. Use at your own risk. If you encounter any problems, please log an [issue](https://github.com/kylefernandadams/box-ui-elements-heroku-template/issues).
+This project is comprised of open source examples and should not be treated as an officially supported product. Use at your own risk. If you encounter any problems, please log an [issue](https://github.com/kylefernandadams/box-canvas-app/issues).
 
 ## License
 
