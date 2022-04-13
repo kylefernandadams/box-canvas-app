@@ -20,7 +20,7 @@ The Box Canvas App project is an SalesforceDX project that contains Lightning Au
 6. Deploy the [box-ui-elements-heroku](https://github.com/kylefernandadams/box-ui-elements-heroku) app to Heroku
 7. Clone this repository
 ```shell
-git clone https://github.com/kylefernandadams/box-salesforce-blueprints
+git clone https://github.com/kylefernandadams/box-canvas-app
 ```
 
 8. Change directory to box-canvas-app
