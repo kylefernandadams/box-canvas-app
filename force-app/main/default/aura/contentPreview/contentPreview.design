@@ -1,3 +1,5 @@
 <design:component label="Content Preview">
+    <design:attribute name="componentName" label="Component Name" description="Enter the name to display in the Lightning Card" default="Box Content Preview"/>
+    <design:attribute name="componentHeight" label="Component Height" required="true" description="Enter the height for the UI Element" default="425px"/>
     <design:attribute name="fileId" label="Box File ID" description="Enter the Box file ID to render in the UI Element" />
 </design:component>

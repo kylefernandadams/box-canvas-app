@@ -2,8 +2,12 @@
     <aura:attribute name="params" type="String" />
     <aura:attribute name="componentName" type="String" />
     <aura:attribute name="componentHeight" type="String" />
-
-    <aura:attribute name="userId" type="String" />
+    <aura:attribute name="boxEnterpriseId" type="String" />
+    <aura:attribute name="boxMdTemplateKey" type="String" />
+    <aura:attribute name="boxMdQueryFieldKey" type="String" />
+    <aura:attribute name="boxMdQueryOperator" type="String"/>
+    <aura:attribute name="salesforceField" type="String" />
+    <aura:attribute name="boxMdColumnFieldKeys" type="String" />
     <aura:attribute name="boxIcon" type="string" default="{!$Resource.logos + '/box.png'}" />
 
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
@@ -12,6 +16,6 @@
             <img src="{!v.boxIcon}" alt="boxIcon" class="boxIcon"/>
             {!v.componentName}
         </aura:set>
-        <force:canvasApp developerName="boxCanvasApp" parameters="{!v.params}" width="100%" height="{!v.componentHeight}"/>
+        <force:canvasApp canvasId="boxCanvasApp" developerName="boxCanvasApp" parameters="{!v.params}" width="100%" height="{!v.componentHeight}" />
     </lightning:card>
 </aura:component>	

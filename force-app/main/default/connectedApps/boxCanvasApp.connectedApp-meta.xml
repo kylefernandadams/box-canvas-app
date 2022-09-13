@@ -2,15 +2,15 @@
 <ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
     <canvasConfig>
         <accessMethod>Post</accessMethod>
-        <canvasUrl>https://HEROKU_APP_NAME_HERE.herokuapp.com/signedrequest</canvasUrl>
+        <canvasUrl>https://MY_HEROKU_APP.herokuapp.com/signedrequest</canvasUrl>
         <lifecycleClass>CanvasAppLifecycleHandler</lifecycleClass>
         <locations>Aura</locations>
         <samlInitiationMethod>None</samlInitiationMethod>
     </canvasConfig>
-    <contactEmail>me@email.com</contactEmail>
+    <contactEmail>kyle.adams@massnerder.io</contactEmail>
     <label>Box CanvasApp</label>
     <oauthConfig>
-        <callbackUrl>https://HEROKU_APP_NAME_HERE.herokuapp.com/callback</callbackUrl>
+        <callbackUrl>https://MY_HEROKU_APP.herokuapp.com/callback</callbackUrl>
         <isAdminApproved>true</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
         <isIntrospectAllTokens>false</isIntrospectAllTokens>
