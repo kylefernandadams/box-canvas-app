@@ -1,3 +1,5 @@
 <design:component label="Content Explorer - Recents">
+    <design:attribute name="componentName" label="Component Name" description="Enter the name to display in the Lightning Card" default="Box Recents"/>
+    <design:attribute name="componentHeight" label="Component Height" required="true" description="Enter the height for the UI Element" default="425px"/>
     <design:attribute name="userId" label="Box User ID" description="Enter the Box user ID to render in the UI Element" required="true"/>
 </design:component>

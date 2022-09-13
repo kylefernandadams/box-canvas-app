@@ -1,5 +1,7 @@
 <aura:component implements="force:hasSObjectName,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes">
     <aura:attribute name="params" type="String" />
+    <aura:attribute name="componentName" type="String" />
+    <aura:attribute name="componentHeight" type="String" />
     <aura:attribute name="folderId" type="String" />
     <aura:attribute name="boxIcon" type="string" default="{!$Resource.logos + '/box.png'}" />
 
@@ -7,8 +9,8 @@
     <lightning:card>
         <aura:set attribute="title">
             <img src="{!v.boxIcon}" alt="boxIcon" class="boxIcon"/>
-            Box Content Explorer
+            {!v.componentName}
         </aura:set>
-        <force:canvasApp developerName="boxCanvasApp" parameters="{!v.params}" width="100%" />
+        <force:canvasApp developerName="boxCanvasApp" parameters="{!v.params}" width="100%" height="{!v.componentHeight}" />
     </lightning:card>
 </aura:component>	

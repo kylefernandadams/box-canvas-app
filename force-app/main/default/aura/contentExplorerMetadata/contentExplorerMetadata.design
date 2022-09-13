@@ -1,0 +1,10 @@
+<design:component label="Metadata Query">
+    <design:attribute name="componentName" label="Component Name" description="Enter the name to display in the Lightning Card" default="Box Metadata Query"/>
+    <design:attribute name="componentHeight" label="Component Height" required="true" description="Enter the height for the UI Element" default="425px"/>
+    <design:attribute name="boxEnterpriseId" label="Box Enterprise ID" required="true" description="Enter the Box enterprise ID"/>
+    <design:attribute name="boxMdTemplateKey" label="Box Metadata Template Key" required="true" description="Enter the metadata template key"/>
+    <design:attribute name="boxMdQueryFieldKey" label="Box Metadata Query Field Key" required="true" description="Enter the metadata query field key"/>
+    <design:attribute name="boxMdQueryOperator" datasource="NOT, LIKE, NOT LIKE, IS NULL, IS NOT NULL, =,>,&lt;,>=,&lt;=,&lt;>" label="Metadata Query Operator"  required="true" description="Enter the metadata query parameter operator"/>
+    <design:attribute name="salesforceField" label="Salesforce Field" description="Enter the Salesforce field to use for the md query"/>
+    <design:attribute name="boxMdColumnFieldKeys" label="Box Metadata Column Keys" description="Enter the comma-delimited metadata column field keys to display"/>
+</design:component>
